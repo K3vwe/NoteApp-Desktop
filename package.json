@@ -1,0 +1,15 @@
+{
+  "name": "desktop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "electron-index.js",
+  "scripts": {
+    "start": "electron src/electron-index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^17.0.1",
+    "electron-util": "^0.17.2"
+  }
+}
