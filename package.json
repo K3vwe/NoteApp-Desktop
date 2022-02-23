@@ -4,12 +4,24 @@
   "description": "",
   "main": "electron-index.js",
   "scripts": {
-    "start": "electron src/electron-index.js"
+    "start": "electron src/electron-index.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -mwl"
+  },
+  "build": {
+    "appId": "io.blackclone.noteapp",
+    "productName": "NoteApp",
+    "directories": {
+      "buildResources": "resources"
+    }
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devdependencies": {
     "electron": "^17.0.1",
+    "electron-builder": "^22.14.13"
+  },
+  "dependencies": {
     "electron-util": "^0.17.2"
   }
 }
